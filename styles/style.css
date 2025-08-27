@@ -10,6 +10,8 @@
   --font-01: 'SF Pro Rounded';
   --font-02: 'SF Pro Display';
   --font-03: 'Roboto';
+  --font-size-14: 0.875rem;
+  --spacing-24: 24px;
 }
 
 @font-face {
@@ -28,7 +30,7 @@
   .container {
     display: flex;
     flex-direction: column-reverse;
-    padding: 24px;
+    padding: var(--spacing-24);
   }
 
   .container__media {
@@ -54,7 +56,7 @@
     font-size: 0.938rem;
     color: #313957;
     line-height: 160%;
-    margin-bottom: 24px;
+    margin-bottom: var(--spacing-24);
   }
 
   .container__content-form {
@@ -68,7 +70,7 @@
 
   .fields > label {
     font-family: var(--font-03);
-    font-size: 0.875rem;
+    font-size: var(--font-size-14);
     color: #0C1421;
     margin-bottom: 8px;
   }
@@ -82,14 +84,14 @@
 
   .fields > input::placeholder {
     color: #8897AD;
-    font-size: 0.875rem;
+    font-size: var(--font-size-14);
   }
 
   .container__content-form-link { 
     text-align: end;
     text-decoration: none;
     font-family: var(--font-03);
-    font-size: 0.875rem;
+    font-size: var(--font-size-14);
     color: #1E4AE9;
     margin-bottom: 16px;
   }
@@ -103,7 +105,7 @@
     border: 0;
     outline: none;
     border-radius: 12px;
-    margin-bottom: 24px;
+    margin-bottom: var(--spacing-24);
   }
   
   .container__content-divider {
@@ -111,7 +113,7 @@
     justify-content: center;
     align-items: center;
     gap: 16px;
-    margin-bottom: 24px;
+    margin-bottom: var(--spacing-24);
   }
 
   .container__content-divider > hr {
@@ -122,8 +124,64 @@
 
   .container__content-divider > span {
     font-family: var(--font-03);
-    font-size: 0.875rem;
+    font-size: var(--font-size-14);
     color: #294957;
     white-space: nowrap;
   }
+
+  .container__content-signins {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: var(--spacing-24);
+  }
+
+  .container__content-button {
+    padding: 8px 9px;
+    width: 100%;
+    background-color: #F3F9FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0 solid #F3F9FA;
+    border-radius: 12px;
+    gap: 16px;
+  }
+
+  .container__content-button-name {
+    font-family: var(--font-03);
+    color: #313957;
+  }
+
+  .button__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .container__content-signup {
+    font-family: var(--font-03);
+    color: #313957;
+    text-align: center;
+  }
+
+  .container__content-signup-link {
+    text-decoration: none;
+  }
+
+  .container__content-footer {
+    font-family: var(--font-03);
+    font-size: var(--font-size-14);
+    color: #959CB6;
+    text-align: center;
+    margin-top: 57px;
+  }
+
+  .container__content-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
 }
