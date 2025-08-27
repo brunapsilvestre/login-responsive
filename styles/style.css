@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-01: 'SF Pro Rounded';
+  --font-02: 'SF Pro Display';
+  --font-03: 'Roboto';
+}
+
+@font-face {
+  font-family: 'SF Pro Rounded';
+  src: url(./../fonts/font-sf-pro-rounded/sf-pro-rounded.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url(./../fonts/sf-pro-display/SFPRODISPLAYREGULAR.OTF);
+  font-style: normal;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 24px;
+  }
+
+  .container__media {
+    background-image: url(./../images/mobile-image.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 180px;
+    margin-bottom: 27px;
+  }
+
+  .container__content-header-title {
+    font-family: var(--font-01);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #0C1421;
+    margin-bottom: 16px;
+  }
+
+  .container__content-header-description {
+    font-family: var(--font-02);
+    font-size: 0.938rem;
+    color: #313957;
+    line-height: 160%;
+    margin-bottom: 24px;
+  }
+
+  .container__content-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fields {
+    margin-bottom: 16px;
+  }
+
+  .fields > label {
+    font-family: var(--font-03);
+    font-size: 0.875rem;
+    color: #0C1421;
+    margin-bottom: 8px;
+  }
+
+  .fields > input {
+    border: 1px solid #D4D7E3;
+    border-radius: 8px;
+    background-color: #F3F7FB;
+    padding: 14px;
+  }
+
+  .fields > input::placeholder {
+    color: #8897AD;
+    font-size: 0.875rem;
+  }
+
+  .container__content-form-link { 
+    text-align: end;
+    text-decoration: none;
+    font-family: var(--font-03);
+    font-size: 0.875rem;
+    color: #1E4AE9;
+    margin-bottom: 16px;
+  }
+
+  .container__content-form-submit {
+    padding: 14px;
+    font-family: var(--font-03);
+    font-size: 1rem;
+    color: #fff;
+    background-color: #162D3A;
+    border: 0;
+    outline: none;
+    border-radius: 12px;
+    margin-bottom: 24px;
+  }
+  
+  .container__content-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .container__content-divider > hr {
+    width: 100%;
+    height: 1px;
+    background-color: #CFDFE2;
+  }
+
+  .container__content-divider > span {
+    font-family: var(--font-03);
+    font-size: 0.875rem;
+    color: #294957;
+    white-space: nowrap;
+  }
+}
