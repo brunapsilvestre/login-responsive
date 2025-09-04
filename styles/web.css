@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+:root {
+  --spacing-24: 24px;
+  --spacing-48: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    max-width: 1400px;
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container__media {
+    background-image: url(./../images/web-image.png);
+    height: 100%;
+    width: 100%;
+    max-width: 778.5px;
+    margin-left: 5%;
+    border-radius: var(--spacing-24);
+  }
+
+  .container__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+    max-width: 388px;
+    width: 100%;
+  }
+
+  .container__content-header-title {
+    font-size: 2.25rem;
+  }
+
+  .container__content-header-description {
+    font-size: 1.25rem;
+    margin-bottom: 28px;
+  }
+
+  .fields {
+    margin-bottom: var(--spacing-24);
+  }
+
+  .fields > label {
+    font-size: 1rem;
+  }
+
+  .container__content-form-link {
+    margin-bottom: var(--spacing-24);
+    font-size: 1rem;
+  }
+
+  .container__content-form-submit { 
+    margin-bottom: var(--spacing-48);
+  }
+
+  .container__content-divider {
+    margin-bottom: 34px;
+  }
+
+  .container__content-signins {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .container__content-button {
+    font-size: 1rem;
+    padding: 12px 9px;
+  }
+
+  .facebook__button {
+    margin-bottom: 20px;
+  }
+
+  .container__content-signup {
+    font-size: 1.125rem;
+  }
+
+  .container__content-text {
+    
+  }
+}
